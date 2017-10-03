@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+	<system>
+		<section id="nsconnectconfiguration" showInDefault="1" showInStore="1" showInWebsite="0" sortOrder="10" translate="label">
+			<label>Netsuite Configuration</label>
+			<tab>i95dev_connect_extensions</tab>
+			<resource>I95Dev_GenericConnect::config_i95dev_genericconnect</resource>
+			<group id="enabled_disabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Enable / Disabled</label>
+				<field id="enabled" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+					<label>Enabled</label>
+					<comment>Select &quot;Yes&quot; for enable the module</comment>
+					<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+				</field>
+			</group>
+			<group id="nsaccount_credential" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+				<label>Netsuite Credendial</label>
+				<field id="email" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>NS Email</label>
+					<comment>Enter NS Account Email</comment>
+				</field>
+				<field id="nspassword" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>NS Password</label>
+					<comment>Enter NS Account Password </comment>
+				</field>
+				<field id="nsaccount" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>NS Account</label>
+					<comment>Enter Netsuite Account ID</comment>
+				</field>
+				<field id="nsrole" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>NS Role</label>
+					<comment>Enter NS Accounte Role ID</comment>
+				</field>
+				<field id="nsappid" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="text">
+					<label>NS APP ID</label>
+					<comment>Enter NS Account APP ID</comment>
+				</field>
+			</group>
+		</section>
+	</system>
+</config>

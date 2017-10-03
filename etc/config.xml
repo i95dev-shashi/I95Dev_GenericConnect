@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<nsconnectconfiguration>
+			<enabled_disabled>
+				<enabled>0</enabled>
+			</enabled_disabled>
+			<nsaccount_credential>
+				<email/>
+				<nspassword/>
+				<nsaccount/>
+				<nsrole/>
+				<nsappid/>
+			</nsaccount_credential>
+		</nsconnectconfiguration>
+	</default>
+</config>
